@@ -1,0 +1,74 @@
+# ===========================
+#   PYTHON / JUPYTER PROJECTS
+# ===========================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Jupyter Lab workspace
+.jupyter/lab/workspaces/
+
+# VSCode settings
+.vscode/
+
+# MacOS files
+.DS_Store
+
+# Environment variables and environments
+.env
+.venv/
+env/
+venv/
+ENV/
+*.env
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*~
+*.swp
+*.swo
+
+# SQLite or local cache databases (if generated)
+*.db
+*.sqlite3
+
+# PyCharm
+.idea/
+
+# Python virtual environment metadata
+pip-log.txt
+pip-delete-this-directory.txt
+
+# CSV backups or autosaves (optional)
+*.csv~
+*.bak
+*.backup
+
+# Ignore hidden system files
+Thumbs.db
+desktop.ini
