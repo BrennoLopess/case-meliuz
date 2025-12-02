@@ -1,117 +1,166 @@
+# 📊 Case Técnico de Data Analytics | Méliuz
 
-README – Case Técnico de Data Analytics | Méliuz
+## Visão Geral
 
-Visão Geral
+Este repositório apresenta a solução completa desenvolvida para o processo seletivo de Estágio em Data Analytics da Méliuz. O material foi estruturado para demonstrar domínio técnico em análise de dados, comunicação clara, organização profissional e capacidade de transformar informações em insights acionáveis.
 
-Este repositório apresenta a solução completa desenvolvida para o processo seletivo de Estágio em Data Analytics da Méliuz. O objetivo deste projeto é demonstrar domínio técnico em análise de dados, capacidade de comunicação analítica e organização de insights orientados ao negócio. A entrega foi construída de forma estruturada, clara e profissional, refletindo boas práticas adotadas no dia a dia de equipes de dados.
+O projeto inclui análise exploratória, processamento dos dados, validação do teste A/B/C, visualizações e uma conclusão executiva alinhada ao contexto de negócios. Toda a análise foi desenvolvida em Python utilizando Jupyter Notebook.
 
-O material inclui análise exploratória, construção de métricas, validação do teste A/B/C, visualizações e uma conclusão executiva com recomendações práticas. Todo o trabalho foi realizado em Python, utilizando Jupyter Notebook.
+---
 
-Objetivo do Estudo
+## 🎯 Objetivo do Projeto
 
-O conjunto de dados fornecido possui quatro tabelas principais:
+A base de dados fornecida contém quatro arquivos principais:
 
-Clientes  
-Pedidos  
-Itens do pedido  
-Produtos  
+- **clientes.csv**
+- **pedidos.csv**
+- **itens_pedido.csv**
+- **produtos.csv**
 
-A partir desses dados, o desafio solicita:
+O objetivo geral do estudo é:
 
-Avaliação comparativa dos Grupos A, B e C (teste A/B/C)  
-Análise geográfica de vendas (influência do estado e ranking por estados e cidades)  
-Investigação do impacto da categoria de produto e da quantidade de itens no status dos pedidos  
-Geração de métricas adicionais relevantes  
-Criação de visualizações úteis  
-Produção de conclusões claras e acionáveis  
+- Analisar o comportamento de compra dos clientes.
+- Avaliar o desempenho dos grupos do teste A/B/C.
+- Identificar padrões geográficos de vendas.
+- Investigar possíveis relações entre características do pedido e seu status.
+- Gerar visualizações que facilitem a interpretação dos resultados.
+- Produzir uma conclusão final sólida e orientada ao negócio.
 
-Este repositório apresenta todo o processo, bem como os resultados alcançados.
+---
 
-Tecnologias Utilizadas
+## 🛠️ Tecnologias Utilizadas
 
-Python  
-Pandas  
-NumPy  
-Matplotlib  
-Seaborn  
-pandasql  
-Jupyter Notebook  
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- pandasql
+- Jupyter Notebook
 
-Estrutura do Repositório
+---
 
-case-meliuz/  
-    meliuz_abc_teste.ipynb  
-    clientes.csv  
-    pedidos.csv  
-    produtos.csv  
-    itens_pedido.csv  
-    README.txt  
+## 📁 Estrutura do Repositório
 
-Principais Análises Realizadas
+```
+case-meliuz/
+│── meliuz_abc_teste.ipynb      # Notebook completo da análise
+│── clientes.csv
+│── pedidos.csv
+│── produtos.csv
+│── itens_pedido.csv
+│── README.txt
+```
 
-1. Desempenho dos Grupos A, B e C
+---
 
-Foram analisados:
+## 📊 Principais Análises Realizadas
 
-Quantidade de clientes por grupo  
-Quantidade de pedidos  
-Taxa de conversão  
-Ticket médio  
-Receita total  
-ARPU (receita média por cliente)  
-Distribuição dos status  
+### 1. Desempenho dos Grupos A, B e C
 
-Resultado: o Grupo B demonstrou desempenho superior em todas as métricas financeiras relevantes. Mesmo com volume de clientes semelhante aos demais, apresentou maior receita total, maior ticket médio e maior receita média por cliente. A recomendação para rollout é o Grupo B.
+Foram avaliadas as seguintes métricas:
 
-2. Influência do Estado no Valor das Vendas
+- Quantidade de clientes por grupo
+- Quantidade de pedidos
+- Taxa de conversão
+- Ticket médio
+- Receita total
+- ARPU (Receita Média por Cliente)
+- Distribuição de status
 
-As análises revelaram diferenças significativas entre estados. Estados do Norte e Nordeste, além de MG e GO, apresentaram receitas superiores. Estados como RS, RN e PB ficaram na parte inferior do ranking.
+📌 **Conclusão:**  
+O **Grupo B** apresentou desempenho superior em todas as métricas. Mesmo com número similar de clientes, obteve:
 
-Conclusão: existe influência direta da localização geográfica no valor das vendas.
+- Maior receita total  
+- Maior ticket médio  
+- Maior ARPU  
 
-3. Ranking de Estados e Cidades
+Isso indica que o comportamento induzido pela variante do Grupo B é o mais favorável.  
+**Recomendação:** Adotar o Grupo B como funcionalidade oficial.
 
-Os estados com maior receita foram RR, MG, MA, AL e GO.
+---
 
-As cidades com maior receita incluem São Paulo (considerando variações de grafia), Curitiba, Belo Horizonte, Goiânia e Rio de Janeiro.
+### 2. Influência do Estado nas Vendas
 
-Conclusão: o desempenho é fortemente concentrado em polos urbanos e regiões específicas do país.
+A análise geográfica demonstrou diferenças significativas entre os estados:
 
-4. Categoria do Produto e Quantidade de Itens x Status do Pedido
+- Estados com maior receita: RR, MG, MA, AL e GO.
+- Estados com menor desempenho: RS, RN e PB.
 
-A taxa de cancelamento foi estável entre todas as categorias e faixas de quantidade de itens. As categorias apresentaram comportamento semelhante, assim como pedidos pequenos e grandes.
+📌 **Conclusão:**  
+Há impacto direto do estado no comportamento de compra dos clientes.
 
-Conclusão: a categoria do produto e o volume de itens não influenciam o status dos pedidos.
+---
 
-5. Métricas Adicionais
+### 3. Ranking de Estados e Cidades
 
-Distribuição geral dos status  
-Ticket médio mensal  
-Top produtos mais vendidos  
+Após consolidar a análise:
 
-As análises demonstraram estabilidade operacional, ausência de sazonalidade acentuada e portfólio diversificado com boa distribuição entre produtos.
+- **São Paulo** aparece como a cidade com maior receita, considerando variações de grafia presentes nos dados.
+- Outros polos relevantes: Curitiba, Belo Horizonte, Goiânia e Rio de Janeiro.
 
-Visualizações Incluídas
+📌 **Conclusão:**  
+O desempenho é fortemente concentrado em centros urbanos de alto fluxo.
 
-Distribuição dos status dos pedidos  
-Evolução do ticket médio mensal  
-Top estados por receita  
-Top cidades por receita  
-Top 10 produtos mais vendidos  
+---
 
-Conclusão Executiva
+### 4. Categoria e Quantidade de Itens x Status do Pedido
 
-A partir da análise realizada, observamos:
+Foram avaliadas:
 
-O Grupo B apresentou melhor desempenho no teste A/B/C e deve ser priorizado em uma futura implementação.  
-A geografia é um fator determinante no comportamento de compra.  
-O pipeline operacional demonstra estabilidade, sem evidência de gargalos críticos.  
-A categoria dos produtos e a quantidade de itens não influenciam o status final dos pedidos.  
-A carteira de produtos se mostra diversificada e com distribuição saudável.  
+- Taxas de confirmação
+- Cancelamentos
+- Pendências por categoria
+- Comportamento por faixas de quantidade de itens
 
-O projeto atende integralmente ao escopo proposto e oferece insights claros, úteis e orientados ao negócio. A estrutura do notebook demonstra organização lógica, pensamento analítico e habilidade em transformar dados em decisões.
+📌 **Conclusão:**  
+Não há diferença significativa entre categorias ou quantidade de itens.  
+O status do pedido é estável e consistente entre diversas combinações de produtos e quantidades.
 
-Autor
+---
 
-Brenno Lopes
-Estudante de Engenharia de Software | Dados e Inteligência Artificial
+### 5. Métricas Adicionais Construídas
+
+Para elevar o nível do case, foram incluídas análises complementares:
+
+- **Distribuição geral dos status**  
+- **Ticket médio mensal**  
+- **Top 10 produtos mais vendidos**
+
+📌 **Conclusão:**  
+O sistema é estável, o ticket médio não apresenta sazonalidade acentuada e o portfólio é bem distribuído.
+
+---
+
+## 📈 Visualizações Criadas
+
+- Gráfico da distribuição dos status dos pedidos  
+- Evolução mensal do ticket médio  
+- Barras horizontais de estados com maior receita  
+- Barras horizontais de cidades com maior receita  
+- Top 10 produtos mais vendidos  
+
+As visualizações reforçam e complementam os resultados estatísticos.
+
+---
+
+## 🧠 Conclusão Executiva
+
+A análise indica:
+
+- O **Grupo B** deve ser priorizado para a funcionalidade final.
+- O comportamento de compra é influenciado pela localização geográfica.
+- A operação é estável, com predominância de pedidos confirmados.
+- A categoria e quantidade de itens não influenciam o status final.
+- O portfólio apresenta boa diversificação e distribuição equilibrada.
+
+O estudo cumpre completamente o escopo proposto no case e oferece uma visão clara, estratégica e fundamentada.
+
+---
+
+## 👤 Autor
+
+**Brenno Lopes**  
+Estudante de Engenharia de Software  
+Foco em Dados e Inteligência Artificial  
+GitHub: github.com/BrennoLopess
